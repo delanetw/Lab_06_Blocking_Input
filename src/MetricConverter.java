@@ -25,8 +25,7 @@ public class MetricConverter
                 System.out.println(meter + " meters in miles is: " + mile);
                 System.out.println(meter + " meters in feet is: " + feet);
                 System.out.println(meter + " meters in inches is: " + inch);
-
-
+                done = true;
             }
             else
             {
