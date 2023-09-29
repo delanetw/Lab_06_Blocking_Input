@@ -32,8 +32,6 @@ public class RectangleInfo
                     System.out.println("The area is: " + area);
                     System.out.println("The length of the diagonal is: " + diag);
                     done = true;
-
-
                 }
                 else
                 {
