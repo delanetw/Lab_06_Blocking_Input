@@ -10,6 +10,9 @@ public class RectangleInfo
         double diag = 0.0;
         double area = 0.0;
         double peri = 0.0;
+        double pyth = 0.0;
+        double pythL = 0.0;
+        double pythW = 0.0;
         String trash = "";
 
         do
@@ -27,8 +30,11 @@ public class RectangleInfo
                     in.nextLine();
                     area = length * width;
                     peri = (length * 2) + (width * 2);
-                    diag = (length * length) + (width * width);
-                    System.out.println("Enter the price per gallon: ");
+                    diag = Math.sqrt((length * length) + (width * width));
+                    System.out.println("The perimeter is: " + peri);
+                    System.out.println("The area is: " + area);
+                    System.out.println("The length of the diagonal is: " + diag);
+                    done = true;
 
 
                 }
