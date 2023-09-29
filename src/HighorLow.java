@@ -18,24 +18,23 @@ public class HighorLow
             if(in.hasNextInt())
             {
                 guess = in.nextInt();
-                in.nextLine();
+
                 if(guess == val)
                 {
                     System.out.println(guess + " is correct!");
                     done = true;
                 }
-                else if(guess >= val)
+                else if(guess > val && guess < 10 && guess > 1)
                 {
                     System.out.println(guess + " is too high.");
                 }
-                else if(guess <= val)
+                else if(guess < val && guess > 1 && guess < 10)
                 {
                     System.out.println(guess + " is too low.");
                 }
                 else
                 {
-                    trash = in.nextLine();
-                    System.out.println("You said: " + trash + ".");
+                    System.out.println("You said: " + guess + ".");
                     System.out.println("Please enter a valid input.");
                 }
             }
