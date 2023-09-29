@@ -14,7 +14,7 @@ public class MetricConverter
         do
         {
 
-            System.out.print("Enter distance in meters: ");
+            System.out.print("Enter the distance in meters: ");
             if(in.hasNextDouble())
             {
                 meter = in.nextDouble();
