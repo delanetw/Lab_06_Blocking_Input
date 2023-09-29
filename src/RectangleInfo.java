@@ -10,9 +10,6 @@ public class RectangleInfo
         double diag = 0.0;
         double area = 0.0;
         double peri = 0.0;
-        double pyth = 0.0;
-        double pythL = 0.0;
-        double pythW = 0.0;
         String trash = "";
 
         do
