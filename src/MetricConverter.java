@@ -10,5 +10,31 @@ public class MetricConverter
         double feet = 0.0;
         double inch = 0.0;
         String trash = "";
+
+        do
+        {
+
+            System.out.print("Enter distance in meters: ");
+            if(in.hasNextDouble())
+            {
+                meter = in.nextDouble();
+                in.nextLine();
+                mile = meter / 1609;
+                feet = meter * 3.281;
+                inch = meter * 39.37;
+                System.out.println(meter + " meters in miles is: " + mile);
+                System.out.println(meter + " meters in feet is: " + feet);
+                System.out.println(meter + " meters in inches is: " + inch);
+
+
+            }
+            else
+            {
+                trash = in.nextLine();
+                System.out.println("You said: " + trash + ".");
+                System.out.println("Please enter a valid input.");
+            }
+
+        }while(!done);
     }
 }
